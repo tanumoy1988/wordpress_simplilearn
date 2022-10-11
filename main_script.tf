@@ -1,9 +1,9 @@
 provider "aws" {
 
   region = var.region
-  access_key = "ASIA3FWJXNXVWKILSHNA"
-    secret_key = "K76VsUqK7qaFhYg9HBnt7d/B41Kw/MKrLorkCGrJ"
-    token = "FwoGZXIvYXdzEKj//////////wEaDBcOPdnLIu4TNnNM6yK2AbfhmUWftuP1MrcoIfS5dMmfaTK9Pm/7Essl0y78CP5xh7aedl6sRucQ4F5vc58iCqMtmo7B3I1bj6yUyOSveJMsE+vM9c9bc30iydSYHlbKfq/+QXXc+u5ibvvZnMgTjF82HDq4VS/kwhSSXGBeFTbBvQalX9cGIqwGZlWwlnmxrehSZj1KvFUqT80TfB45QoGl2shhaFkyTEO1cHWVzXtobjMI6hz3gSnig0gkXDgnpeDjFMwiKL7WkJoGMi3g+a3JldyCZ6DYO6d9/c12ZYILtwNSSmSQcckqJ1y9vuA3remRJuOfeT7c41s="
+  access_key = "ASIA3FWJXNXVTDWHOV3D"
+    secret_key = "ML4Tci6UizK9Mp0wjllTdLlP0EeGOAsWlFL4npYe"
+    token = "FwoGZXIvYXdzEML//////////wEaDN8hrrPsuYJmCrPiVSK2AbpCLepZ3rIrsugTIgIT1o/qkK1PMtAy7rMcEvURrhAlu6c3WjppOyt7NA2YIz1HYqZDRLD1e0tKyg9M9WgS9NeZtKFOj8zaE+GBlJ5Ss02QidVli593fILcrYQ1A/iUCgKVbYQk7ynpBCH2HUx5i58TXiMdhqASikRe4H975Dp1c2ElXUyF/4lhyvkYqZr0R+C3l6Ua58sNI6No3XJdHDbftAD1Zggm5mwULKdAbx2k+BQAlu75KICtlpoGMi3YgQ/HrH52izZfcz4ghPhXI8h5FZni71klRYVT1t2WvLuar6Rxb+rMhZKjmps="
 }
 
 
@@ -12,7 +12,6 @@ resource "aws_vpc" "prod-vpc" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_support   = "true" #gives you an internal domain name
   enable_dns_hostnames = "true" #gives you an internal host name
-  enable_classiclink = "false"
   instance_tenancy     = "default"
 }
 
